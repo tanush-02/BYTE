@@ -1,4 +1,6 @@
-require("dotenv").config();
+import dotenv from "dotenv";
+import authRoutes from "./routes/authRoutes.js";
+
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -11,6 +13,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use("/api/auth", authRoutes);
 
 
 
