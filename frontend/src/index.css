@@ -66,7 +66,7 @@ code {
 
     footer {
       background:beige; 
-      color:rgb(49, 229, 49);
+      color:black;
       padding: 40px 20px;
     }
 
@@ -81,7 +81,7 @@ code {
     .footer h4 {
       margin-bottom: 15px;
       font-size: 20px;
-      border-left: 4px solid #a5d6a7;
+      border-left: 4px solid black;
       padding-left: 10px;
     }
 
@@ -90,12 +90,12 @@ code {
     .footer a {
       font-size: 14px;
       line-height: 1.6;
-      color: #e0f2f1;
+      color: rgb(34, 37, 37);
       text-decoration: none;
     }
 
     .footer a:hover {
-      color: #a5d6a7;
+      color: #61d265;
     }
 
     .footer ul {
@@ -121,5 +121,5 @@ code {
       padding-top: 15px;
       border-top: 1px solid rgba(255,255,255,0.2);
       font-size: 13px;
-      color: #c8e6c9;
+      color: #2c942f;
     }

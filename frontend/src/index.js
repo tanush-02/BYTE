@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap first
-import "./index.css"; // CSS second
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import "./index.css";
 
 // import HomePage from "./landing_page/home/HomePage/HomePage.js";
 // import Signup from "./landing_page/signup/Signup.js";

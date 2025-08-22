@@ -9,7 +9,7 @@ function NotFound() {
 
       <div className="row">
             <img
-            src="media/images/404.svg"
+            src="images/404.svg"
             alt="404 Not Found"
             className="img-fluid mb-5 d-block mx-auto"
             style={{ width: "100%", maxWidth: "600px" }}
