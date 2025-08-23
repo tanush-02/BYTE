@@ -1,39 +1,35 @@
-import dotenv from "dotenv";
 import express from "express";
-import mongoose from "mongoose";
-import bodyParser from "body-parser";
 import cors from "cors";
-
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 import authRoutes from "./routes/authRoutes.js";
 
-// Load env variables
 dotenv.config();
-
-const PORT = process.env.PORT || 3002;
-const uri = process.env.MONGO_URL;
-
-if (!uri) {
-  console.error("❌ MONGO_URL is missing. Check your .env file.");
-  process.exit(1);
-}
 
 const app = express();
 
-// Middlewares
-app.use(cors());
-app.use(bodyParser.json());
+// Parse JSON bodies
+app.use(express.json());
 
-// Routes
+// CORS
+app.use(cors({
+  origin: "http://localhost:3000", // React frontend
+  credentials: true
+}));
+
+// Test route
+app.get("/", (req, res) => res.send("Backend running"));
+
+// Auth routes
 app.use("/api/auth", authRoutes);
 
-// Connect to MongoDB
-mongoose.connect(uri)
+const PORT = process.env.PORT || 8000;
+
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("✅ MongoDB connected");
-    app.listen(PORT, () => {
-      console.log(`🚀 Server running on port ${PORT}`);
-    });
+    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
   })
-  .catch((err) => {
-    console.error("❌ MongoDB connection failed:", err.message);
-  });
+  .catch(err => console.error("❌ MongoDB connection failed:", err));
+
+  

@@ -21,15 +21,12 @@ function CreateTicket() {
              Partnership and Account
           </a>
           <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-            Opening
-          </a>
-          <br />
+          
           
         </div>
         <div className="col-4 p-5 mt-2 mb-2">
           <h4 className="">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> Forex Account
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> Services
           </h4>
           
           <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
@@ -47,12 +44,9 @@ function CreateTicket() {
         </div>
         <div className="col-4 p-5 mt-2 mb-2">
           <h4 className="">
-            <i class="fa fa-plus-circle" aria-hidden="true"></i> 
+            <i class="fa fa-plus-circle" aria-hidden="true"></i> More
           </h4>
-          <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-            Online Account Opening
-          </a>
-          <br />
+          
     
           
           <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
