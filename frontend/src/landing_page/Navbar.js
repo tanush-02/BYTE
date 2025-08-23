@@ -76,7 +76,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/pricing">
+              <a className="nav-link active" href="/market">
                 Market
               </a>
             </li>

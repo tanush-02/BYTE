@@ -7,6 +7,8 @@ import HomePage from "./landing_page/home/HomePage/HomePage.js";
 import Auth from "./landing_page/signup/Auth.js"; // ✅ use new Auth component
 // import ProductPage from "./landing_page/products/ProductPage";
 import SupportPage from "./landing_page/support/SupportPage";
+import CropPrices from "./landing_page/Market/CropPrice.js";
+
 
 import NotFound from "./landing_page/NotFound";
 import Navbar from "./landing_page/Navbar";
@@ -21,6 +23,7 @@ root.render(
       {/* <
       <Route path="/product" element={<ProductPage />} />
       <Route path="/pricing" element={<PricingPage />} /> */}
+      <Route path="/market" element={<CropPrices />} />
       <Route path="/auth" element={<Auth />} />
       <Route path="/signup" element={<Auth />} /> {/* ✅ Signup + Signin */}
       <Route path="/support" element={<SupportPage />} />
