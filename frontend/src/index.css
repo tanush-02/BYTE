@@ -23,6 +23,35 @@ code {
   font-variation-settings:
     "wdth" 100;
 } */
+.marquee-wrapper {
+  width: 100%;             /* full width container */
+  overflow: hidden;        /* hide overflow */
+  background-color: #111;  /* dark background */
+  color: #fff;             /* text color */
+  padding: 10px 0;
+  border-radius: 10px;     /* optional rounded look */
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;      /* prevents line breaks */
+  animation: marquee 15s linear infinite; /* smooth scroll */
+  font-size: 1.2rem;
+}
+
+.marquee-content span {
+  margin-right: 50px;       /* spacing between items */
+}
+
+/* Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);  /* start from right */
+  }
+  100% {
+    transform: translateX(-100%); /* end at left */
+  }
+}
 
 
 
