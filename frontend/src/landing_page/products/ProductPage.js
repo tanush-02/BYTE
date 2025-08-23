@@ -36,8 +36,8 @@ function ProductPage() {
 
             <RightSection
             imageUrl="https://agriwow.com/wp-content/uploads/2024/05/Untitled-5.jpg"
-            productName="Cultivator"
-            description={"API is a powerful tool that allows developers to integrate and interact with various software applications and services. With a robust set of features and functionalities, API enables seamless communication between different systems, facilitating data exchange and automation. Whether you're building a web application, mobile app, or any other software solution, API provides the flexibility and scalability needed to enhance your development process."}
+            productName="Grass Cutter"
+            description={"A grass cutter is a mechanical tool that uses revolving blades to trim grass to a uniform height, making it suitable for lawns, gardens, and some agricultural applications. These machines are powered by various sources, including petrol engines, electric motors, or manual force, and can be walk-behind, ride-on, or handheld designs. Modern grass cutters often feature adjustable cutting heights and can be versatile tools for landscaping, weeding, and even harvesting crops."}
             link="https://www.moglix.com/shwarya-52cc-heavy-type-2-mini-tiller-cultivator-1030799/mp/msno5wn74z7w51?srsltid=AfmBOorrR10lIAezn0OmDT47cPICEnt6fQlWGRlq9UIjMdYth6NWYRAm0uI"
             />
         </>
