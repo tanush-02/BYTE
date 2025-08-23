@@ -76,6 +76,11 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
+              <a className="nav-link active" href={`${process.env.PUBLIC_URL}/market.html`} target="_blank" rel="noopener noreferrer">
+                Analytics
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link active" href="/market">
                 Market
               </a>

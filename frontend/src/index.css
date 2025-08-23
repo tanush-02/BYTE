@@ -124,6 +124,19 @@ code {
       color: #2c942f;
     }
 
+    .right-section-image {
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+}
+.left-section-image {
+    width: 450px;          /* fixed width */
+    height:auto ;         /* fixed height */
+    object-fit: cover;     /* maintain aspect ratio, crop if needed */
+    display: block;
+    margin: 0 auto;        /* center horizontally */
+}
+
     /* .cardall{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
