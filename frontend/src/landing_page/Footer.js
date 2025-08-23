@@ -37,6 +37,7 @@ function Footer() {
 
     
     <div class="footer-bottom">
+      <h3>Developed and Deployed by Tanush</h3>
       &copy; 2025 KISAAN. All Rights Reserved. 🌱 Growing Together
     </div>
   </footer>

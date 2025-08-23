@@ -6,13 +6,7 @@ function Hero() {
         <p>
           Empowering farmers with knowledge, tools, and updates for sustainable agriculture
         </p>
-        <button
-          className="p-2 btn btn-outline-success fs-5 mb-5"
-          style={{ width: "20%", margin: "0 auto" }}
-          href="/signup"
-        >
-          Signup Now
-        </button>
+        
         <img
           src="images/Heroimg.png"
           alt="Hero Image"
