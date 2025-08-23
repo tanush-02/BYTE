@@ -21,7 +21,7 @@ const handleSubmit = async (e) => {
     if (isLogin) {
       // Login request
       res = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://byte-backend-raxq.onrender.com/api/auth/login", // <-- updated backend URL
         {
           email: formData.email,
           password: formData.password,
@@ -30,7 +30,7 @@ const handleSubmit = async (e) => {
     } else {
       // Signup request
       res = await axios.post(
-        "http://localhost:8000/api/auth/signup",
+        "https://byte-backend-raxq.onrender.com/api/auth/signup", // <-- updated backend URL
         formData
       );
     }
@@ -41,8 +41,8 @@ const handleSubmit = async (e) => {
     if (res.data.token) {
       localStorage.setItem("token", res.data.token);
 
-      // ✅ Redirect to dashboard after successful login
-      window.location.href = "/"; // or your dashboard route
+      // Redirect to home page
+      window.location.href = "/";
     }
 
     // Clear form after submit
@@ -52,6 +52,7 @@ const handleSubmit = async (e) => {
     alert(err.response?.data?.message || "❌ Something went wrong");
   }
 };
+
 
 // ... rest of your Auth component (return JSX) stays the same
 
