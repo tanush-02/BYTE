@@ -10,15 +10,15 @@ export default function() {
     { name: "Maize", price: 1800 },
     { name: "Cotton", price: 5500 },
     { name: "Sugarcane", price: 3000 },
-    { name: "Tomato", price: 25 },
-    { name: "Potato", price: 18 },
-    { name: "Onion", price: 30 },
-    { name: "Chili", price: 120 },
-    { name: "Coriander", price: 80 }
+    { name: "Tomato", price: 6000 },
+    { name: "Potato", price: 4500 },
+    { name: "Onion", price: 3000 },
+    { name: "Chili", price: 12000 },
+    { name: "Coriander", price: 8000 }
   ];
 
   const [crops, setCrops] = useState(initialCrops);
-  const [selectedCrop, setSelectedCrop] = useState("Wheat");
+  const [selectedCrop, setSelectedCrop] = useState("Cotton");
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
 
@@ -80,7 +80,7 @@ export default function() {
         <thead>
           <tr style={{ backgroundColor: "#2e7d32", color: "white" }}>
             <th style={{ padding: "12px", border: "1px solid #ddd" }}>Crop</th>
-            <th style={{ padding: "12px", border: "1px solid #ddd" }}>Price (₹/unit)</th>
+            <th style={{ padding: "12px", border: "1px solid #ddd" }}>Price (₹/quintal)</th>
           </tr>
         </thead>
         <tbody>

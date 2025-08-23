@@ -16,7 +16,7 @@ function ProductPage() {
             imageUrl="https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/ExtraLarge/all-agriculture-implements-20250619114005427.jpg"
             productName="Power Weeder"
             description={"all-equiep : Buy the 7 HP Agricultural Power Weeder | BP-700 at wholesale rates. Get a high-quality Mini Power Weeder with an air-cooled engine, offering durability and top performance. Krishitool ensures the best prices and exclusive brand discounts, so you can purchase with confidence and enjoy great offers.."}
-            link="/"
+            link="https://www.aajjo.com/product/all-agriculture-implements-in-jaipur-rbd-machine-tools-pvt-ltd"
 
             />
 
@@ -31,14 +31,14 @@ function ProductPage() {
             imageUrl="https://5.imimg.com/data5/AY/WA/DU/SELLER-7696205/agriculture-battery-operated-spray-machine-1000x1000.jpg"
             productName="Sprayer"
             description={"A sprayer is a device used to spray a liquid, where sprayers are commonly used for projection of water, weed killers, crop performance materials, pest maintenance chemicals, as well as manufacturing and production line ingredients."}
-            link="/"
+            link="https://www.moglix.com/kisankraft-18l-1a-battery-sprayer-kk-bbs-185/mp/msn457m6podn9j?s_kwcid=AL!10177!3!330032743408!b!!g!!&utm_source=google_shopping&utm_medium=seo&utm_network=google_freelisting&srsltid=AfmBOor5nu8YxmerjzSx307h_uKr2V6EunYK-q1YGWdAf1dN15EEQE5Pv5k"
             />
 
             <RightSection
             imageUrl="https://agriwow.com/wp-content/uploads/2024/05/Untitled-5.jpg"
             productName="Cultivator"
             description={"API is a powerful tool that allows developers to integrate and interact with various software applications and services. With a robust set of features and functionalities, API enables seamless communication between different systems, facilitating data exchange and automation. Whether you're building a web application, mobile app, or any other software solution, API provides the flexibility and scalability needed to enhance your development process."}
-            link="/"
+            link="https://www.moglix.com/shwarya-52cc-heavy-type-2-mini-tiller-cultivator-1030799/mp/msno5wn74z7w51?srsltid=AfmBOorrR10lIAezn0OmDT47cPICEnt6fQlWGRlq9UIjMdYth6NWYRAm0uI"
             />
         </>
     )
