@@ -48,21 +48,6 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-lg-0">
 
-            {/* ✅ Dynamic Signin/Signup/Signout */}
-            <li className="nav-item">
-              {isAuthenticated ? (
-                <button
-                  className="btn btn-outline-danger me-2"
-                  onClick={handleLogout}
-                >
-                  Signout
-                </button>
-              ) : (
-                <a className="btn btn-outline-success me-2" href="/signup">
-                  Signup
-                </a>
-              )}
-            </li>
 
               <li className="nav-item">
               <a className="nav-link active" href="/">
@@ -90,6 +75,23 @@ function Navbar() {
                 Support
               </a>
             </li>
+
+             {/* ✅ Dynamic Signin/Signup/Signout */}
+            <li className="nav-item ms-5">
+              {isAuthenticated ? (
+                <button
+                  className="btn btn-outline-danger me-2 "
+                  onClick={handleLogout}
+                >
+                  Signout
+                </button>
+              ) : (
+                <a className="btn btn-outline-success me-2" href="/signup">
+                  Signup
+                </a>
+              )}
+            </li>
+
           </ul>
         </div>
       </div>
