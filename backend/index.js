@@ -38,19 +38,6 @@ app.get("/", (req, res) => res.send("Backend running"));
 // Auth routes
 app.use("/api/auth", authRoutes);
 
-// --- Crop Price Data (Starter data) ---
-let crops = [
-  { name: "Wheat", price: 2200 },
-  { name: "Rice", price: 3100 },
-  { name: "Maize", price: 1800 },
-  { name: "Cotton", price: 5500 },
-  { name: "Sugarcane", price: 3000 },
-  { name: "Tomato", price: 25 },
-  { name: "Potato", price: 18 },
-  { name: "Onion", price: 30 },
-  { name: "Chili", price: 120 },
-  { name: "Coriander", price: 80 }
-];
 
 // Crop API
 app.get("/api/crops", (req, res) => res.json(crops));
