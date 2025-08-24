@@ -6,30 +6,20 @@ import User from "../models/User.js";
 const router = express.Router();
 
 // Signup
+// Signup (fixed)
 router.post("/signup", async (req, res) => {
   try {
     const { name, email, password } = req.body;
-
-    // Validate input
     if (!name || !email || !password) 
       return res.status(400).json({ message: "All fields required" });
 
-    // Check if user exists
     const existingUser = await User.findOne({ email });
     if (existingUser)
       return res.status(400).json({ message: "User already exists" });
 
-    // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
+    // 🔥 DO NOT manually hash here
+    const newUser = await User.create({ name, email, password });
 
-    // Save user
-    const newUser = await User.create({
-      name,
-      email,
-      password: hashedPassword
-    });
-
-    // Create token
     const token = jwt.sign(
       { id: newUser._id },
       process.env.JWT_SECRET || "secret",
@@ -47,19 +37,18 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-// Login
+
+// Login (fixed)
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
-
     if (!email || !password)
       return res.status(400).json({ message: "Email & password required" });
 
     const user = await User.findOne({ email });
     if (!user) return res.status(400).json({ message: "User not found" });
 
-    // Compare password
-    const isMatch = await bcrypt.compare(password, user.password);
+    const isMatch = await user.matchPassword(password); // uses model method
     if (!isMatch) return res.status(400).json({ message: "Incorrect password" });
 
     const token = jwt.sign(

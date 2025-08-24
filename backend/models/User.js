@@ -14,9 +14,11 @@ userSchema.pre("save", async function (next) {
   next();
 });
 
-// Add a method to check password
+// Method to check password
 userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
-export default mongoose.model("User", userSchema);
+// ✅ Correct way to export model
+const User = mongoose.models.User || mongoose.model("User", userSchema);
+export default User;

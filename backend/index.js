@@ -50,6 +50,11 @@ const io = new Server(server, {
   }
 });
 
+let crops = [
+  { name: "Wheat", price: 1200 },
+  { name: "Rice", price: 1500 }
+];
+
 io.on("connection", socket => {
   console.log("Client connected:", socket.id);
   socket.emit("priceUpdate", crops);
