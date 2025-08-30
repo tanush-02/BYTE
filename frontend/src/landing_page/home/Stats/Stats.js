@@ -1,8 +1,8 @@
 export default function Stats() {
   return (
-    <div className="container p-3">
+    <div className="container p-3 col-12 col-md-6">
       <div className="row p-5">
-        <div className="col-6 p-5">
+        <div className="col-6 p-5 col-md-6">
           <h1 className="fs-2 mb-5">Grow with confidence</h1>
           <h2 className="fs-4">Vision and Mission</h2>
           <p className="text-muted">
